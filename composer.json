@@ -1,0 +1,43 @@
+{
+  "name": "ironhoang/php-poppler",
+  "description": "This PHP class can convert your pdf files to html using poppler-utils.",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "IronHoang",
+      "email": "iron.hoang@nexusfrontier.tech",
+      "homepage": "nexusfrontier.tech",
+      "role": "Developer"
+    }
+  ],
+  "require": {
+    "php": ">=5.4.0",
+    "pelago/emogrifier": "^5.0.0",
+    "ext-dom": "*",
+    "ext-fileinfo": "*",
+    "illuminate/support": "^8.0|^7.0"
+  },
+  "autoload": {
+    "psr-0": {
+      "TonchikTm": "src"
+    },
+    "psr-4": {
+      "ironhoang\\PdfPoppler\\": "src/"
+    }
+  },
+  "minimum-stability": "dev",
+  "prefer-stable": true,
+  "config": {
+    "sort-packages": true
+  },
+  "require-dev": {
+
+    "phpunit/phpunit": "^8.5"
+
+  },
+  "extra": {
+    "laravel": {
+      "providers": "Ironhoang\\PdfPoppler\\PdfToHtmlServiceProvider"
+    }
+  }
+}
